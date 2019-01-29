@@ -1,5 +1,6 @@
 window.onload = function(){
-  $.ajax({
+    
+ $.ajax({
         type: "GET", 
         url: "data/tweets.json",
         success: function(data){
@@ -9,33 +10,32 @@ window.onload = function(){
         url: "data/friends.json",
         success: function(data){
             console.log(data);
-           
+
          $.ajax({
         type: "GET", 
         url: "data/videos.json",
         success: function(data){
             console.log(data);
-            
+
             },
-            
+
         error: function(jqXHR, textStatus, error){
         console.log(error);
       }
     });   
  },
-            
+
         error: function(jqXHR, textStatus, error){
         console.log(error);
       }
     });
   },
-            
+
         error: function(jqXHR, textStatus, error){
         console.log(error);
       }
    });
 };
-
  
 //     function cb(data) {
 //         console.log(data);
