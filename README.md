@@ -9,7 +9,7 @@ example: var article = readSync(article_loc);
          var authors = readSync(authors_loc);
          console.log(authors);
 
-if the top file is large then it will take a longer time to run the second line
+if the first file is large then it will take a longer time to run the second file
 that is why we use asynchronous.js, to combat this problem
 
 readAsync(article_loc, function(){ // this is the asynchronous.js version of the code above
