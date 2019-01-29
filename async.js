@@ -1,14 +1,40 @@
 window.onload = function(){
+  $.get("data/tweets.json", function(data){
+      console.log(data);
+  });
+  
+  
+  
     
-    var http = new XMLHttpRequest();
+    // function callback(val){
+    //     console.log(val);
+    // }
     
-    http.onreadystatechange = function() {
-        if(http.readyState == 4 && http.status == 200){
-            console.log(JSON.parse(http.response));
-        }
-    };
+    // var fruits = ["banana", "apple", "pineapple"];
+    // fruits.forEach(function(){
+    //     console.log.log("done");
+    // });
     
-    http.open("GET", "data/tweets.json", true);
-    http.send();
-    console.log("test");
-};
+    
+    
+    
+    
+//     var http = new XMLHttpRequest();
+    
+//     http.onreadystatechange = function() {
+//         if(http.readyState == 4 && http.status == 200){
+//           // console.log(JSON.parse(http.response));
+//         }
+//     };
+    
+//     http.open("GET", "data/tweets.json", true);
+//     http.send();
+//   // console.log("test");
+   
+//   //jquery method
+//   $.get("data/tweets.json", function(data){
+//       console.log(data);
+//   });
+//   console.log(test);
+   
+// };
