@@ -1,67 +1,25 @@
 window.onload = function(){
-
-    $.ajax({
-        type: "GET", 
-        url: "data/tweets.json",
-        success: function(data){
-            console.log(data);
-     $.ajax({
-        type: "GET", 
-        url: "data/friends.json",
-        success: function(data){
-            console.log(data);
-           
-         $.ajax({
-        type: "GET", 
-        url: "data/videos.json",
-        success: function(data){
-            console.log(data);
-            
-            },
-            
-        error: function(jqXHR, textStatus, error){
-        console.log(error);
-      }
-    });   
- },
-            
-        error: function(jqXHR, textStatus, error){
-        console.log(error);
-      }
-    });
-  },
-            
-        error: function(jqXHR, textStatus, error){
-        console.log(error);
-      }
-   });
+    
+   
+ 
+    function cb(data) {
+        console.log(data);
+    }
+    $.get("data/tweets.json", cb);
+    console.log("test");
 };
 
 
 
 
-
-
-
-
-//     function cb(data) {
-//         console.log(data);
-//     }
-//     $.get("data/tweets.json", cb);
-//     console.log("test");
-// };
-
-
-
-
-    // function callback(val){
-    //     console.log(val);
-    // }
+    function callback(val){
+        console.log(val);
+    }
     
-    // var fruits = ["banana", "apple", "pineapple"];
-    // fruits.forEach(function(){
-    //     console.log.log("done");
-    // });
+    var fruits = ["banana", "apple", "pineapple"];
+    fruits.forEach(function(){
+        console.log.log("done");
+    });
     
     
 
