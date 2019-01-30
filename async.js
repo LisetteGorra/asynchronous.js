@@ -1,15 +1,45 @@
 window.onload = function(){
+    //generators
+    function* gen(){
+        var x = yield 10;
+        console.log(x);
+    }
+    
+    var myGen = gen();
+    console.log(myGen.next());
+    console.log(myGen.next(10));
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
   //jquery way 
   
-  $.get("data/tweets.json").then(function(tweets){
-      console.log(tweets);
-      return $.get("data/friends.json");
-  }).then(function(friends){
-      console.log(friends);
-      return $.get("data/videos.json")
-  }).then(function(videos){
-      console.log(videos);
-  });
+//   $.get("data/tweets.json").then(function(tweets){
+//       console.log(tweets);
+//       return $.get("data/friends.json");
+//   }).then(function(friends){
+//       console.log(friends);
+//       return $.get("data/videos.json")
+//   }).then(function(videos){
+//       console.log(videos);
+//   });
 
 
 
@@ -18,8 +48,8 @@ window.onload = function(){
 
 
 
-};
-//  function get(url){
+// };
+// //  function get(url){
 //      return new Promise(function(resolve,reject){
 //          var xhttp = new XMLHttpRequest();
 //          xhttp.open("GET", url, true);
